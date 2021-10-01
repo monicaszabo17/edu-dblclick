@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Lato:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Arvo', Helvetica, serif;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: center;
+    height: auto;
+    color: #366ed9;
+}
+
+main{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+h3 {
+    color: #366ed9;
+    margin-bottom: 3vh;
+    margin-top: 15vh;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+p{
+    color: #366ed9;
+    margin: 0 auto;
+    margin-top: 15vh;
+    margin-bottom: 3vh;
+}
+
+img{
+    max-width: 100vw;
+    width: 40vw;
+    height: 50vh;
+    margin: 0 auto;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+ #one, #two{
+    margin-top: 30vh;
+    box-shadow: 5px 2px 5px 2px#505050;
+    border: 5px groove #366ed9;
+ }
+
+ #one{
+    background-position: center;
+     background-image: url("beach.jpg");
+     background-size: cover;
+     height: 50vh;
+     width: 40vw;
+     margin: 0 auto;
+}
+
+ #two{
+    background-position: center;
+    background-image: url("painter.jpg");
+    background-size: cover;
+    height: 50vh;
+    width: 40vw;
+    margin: 0 auto;
+ }
+
+ @media screen and(max-width: 360px){
+     body{
+         font-size: 1rem;
+     }
+     h3{
+         margin-top: 1vh;
+     }
+     p{
+         margin-bottom: 2vh;
+         margin-top: 3vh;
+     }
+     #one,#two{
+         max-width: 60vw;
+     }
+ }
+  

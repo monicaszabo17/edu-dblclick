@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="style.css" rel="stylesheet" >
+
+    <title>Double click</title>
+    
+  </head>
+  <body>
+     
+    <h3>Double click</h3>
+    <p>Double click on the finger signs to reveal pictures.</p>
+    
+    <main>
+        <div id ="one">
+           <img ondblclick="revealOne(touchOne)"  id="touchOne" src= "touch.png" alt ="">
+        </div>
+       <div id="two">
+           <img ondblclick="revealTwo(touchTwo)"  id="touchTwo" src= "touch.png" alt ="" >
+        </div>
+    </main>
+    <script>
+       let touchOne = document.getElementById("touchOne");
+       let touchTwo = document.getElementById("touchTwo");
+            function revealOne(touchOne){
+               let one = document.getElementById("one");
+               touchOne.src = one.src;
+               touchOne.style.zIndex="5";
+               one.style.zIndex="10";
+             }
+
+             function revealTwo(touchTwo){
+               let two = document.getElementById("two");
+               touchTwo.src = two.src;
+               touchTwo.style.zIndex="5";
+               two.style.zIndex="10";
+             }
+         </script>
+   </body>
+</html>
+
